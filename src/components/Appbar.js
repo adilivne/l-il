@@ -37,7 +37,7 @@ export default function Appbar() {
         <a href="#executives"><MenuItem onClick={handleClose}>Executives</MenuItem></a>
         <a href="#clients"><MenuItem onClick={handleClose}>Client Testimonials</MenuItem></a>
         <a href="#articles"><MenuItem onClick={handleClose}>News & Articles</MenuItem></a>
-        <a href="#about"><MenuItem onClick={handleClose}>Contact Us</MenuItem></a>
+        <a href="#contact"><MenuItem onClick={handleClose}>Contact Us</MenuItem></a>
         {/* </Fade> */}
       </Menu>
       <h2 style={{ padding: '100px 100px', color: "white"}}><strong>L-il is a boutique executive search firm that specializes in targeted acquisition and headhunting of top talent candidates for our clients.

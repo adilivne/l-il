@@ -8,6 +8,7 @@ import Employers from './components/Employers'
 import Executives from './components/Executives'
 import Clients from './components/Clients'
 import Articles from './components/Articles'
+import ContactForm from './components/ContactForm'
 // import Theme from './components/Theme'
 import { makeStyles } from '@material-ui/core/styles';
 import { CssBaseline, Paper } from '@material-ui/core';
@@ -22,6 +23,8 @@ const styles = {
     backgroundSize: 'cover',
     // backgroundColor: '#000000',
     // opacity: 0.8,  
+    // scrollBehavior: "smooth"
+
   },
   paperContainerSecond: {
     minHeight: '70vh',
@@ -30,8 +33,8 @@ const styles = {
     backgroundSize: 'cover',
     marginTop: '-10px',
     // backgroundColor: 'rgba(128, 128, 128, .4)' 
-    position: "absolute",
-        opacity: 0.8,  
+    // position: "absolute",
+        // opacity: 0.4,  
 
     }
 };
@@ -57,28 +60,27 @@ const styles = {
 
 
 function App() {
-  // const classes = useStyles(); blabls
+  // const classes = useStyles();
 
   return (
-    <div className="App">
+    <div className="App" style={{ scrollBehavior: "smooth" }}>
       {/* <div className={classes.root}> 
             <CssBaseline /> */}
       <Paper style={styles.paperContainer}>
         <AppBar />
       </Paper>
       <div style={{position: "relative"}}>
-      <Paper style= {styles.paperContainerSecond}>
-        <Second/>
-      </Paper>
+      <div style= {styles.paperContainerSecond}>
+      <Second/>
+      </div>
+      </div>
       <About/>
       <Employers/>
       <Executives/>
       <Clients/>
       <Articles/>
+      <ContactForm/>
     </div>
-
-    // <Navbar/>
-    // </div>
   );
 }
 
