@@ -92,14 +92,14 @@ function ContactForm() {
         Submit
       </button>
     </form>
-      <div id="contact" style={{ backgroundColor: "#e8eaf6" }}>
-    <form action="https://formspree.io/f/mgerayoy" method="post">
-  <label for="email">Your Email</label>
-  <input name="Email" id="email" type="email"></input>
-  <button type="submit">Submit</button>
+  //     <div id="contact" style={{ backgroundColor: "#e8eaf6" }}>
+  //   <form action="https://formspree.io/f/mgerayoy" method="post">
+  // <label for="email">Your Email</label>
+  // <input name="Email" id="email" type="email"></input>
+  // <button type="submit">Submit</button>
 
-</form>
-</div>
+// </form>
+// </div>
   );
 }
 
